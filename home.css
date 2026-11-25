@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+html,
+body {
+    font-family: "Quicksand", sans-serif;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #f4e8ca;
+    animation: fadeIn 0.4s ease;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* header */
+
+.header {
+    background-color: #dccfaf;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+#logo {
+    height: 100%;
+}
+
+.ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: #8c9c5d;
+    transition: 0.3s;
+    font-weight: 500;
+
+}
+
+a:hover {
+    font-size: 20px;
+}
+
+/* fim header */
+
+
+
+/* bem-vindo */
+
+.bem-vindo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 350px;
+}
+
+#h1,
+#p1 {
+    text-decoration: underline;
+    color: #8c9c5d;
+    background-color: #dccfafa5;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* fim bem-vindo */
+
+/* historia*/
+
+.historia {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+#h21 {
+    text-decoration: underline;
+    color: #ffebbd;
+    background-color: #8c9c5d9c;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#p2 {
+    width: 260px;
+    margin-left: 140px;
+    background-color: #8c9c5d9c;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #ffebbd;
+}
+
+.orgimg {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 40px;
+    margin-right: 50px;
+}
+
+.orgimg img {
+    width: 30%;
+    height: 30%;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* fim historia*/
+
+/* galeria*/
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #8c9c5d;
+    background-color: #dccfafa5;
+    margin-top: 200px;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.botoes {
+    display: flex;
+    gap: 100px;
+}
+
+.galeria button {
+    background:none;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+   color: #8c9c5d;
+   transition: 0.3s ease-in-out;
+}
+
+.galeria button:hover {
+    color: #687342;
+    font-size: 60px;
+}
+
+.imagens {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    width: 1000px;
+    scroll-behavior: smooth; 
+}
+
+.imagens img {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+/* fim galeria*/
+
+/* depoimentos*/
+
+.depoimentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background-color: #8c9c5d9c;
+}
+
+.dividir {
+    display: flex;
+    margin-top: 60px;
+}
+
+.estrelas{
+    margin-top: 10px;
+}
+
+.angelica {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0 auto;
+    background-color: #8c9c5d9c;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px #8c9c5d9c;
+}
+
+.imgangelica {
+    display: flex;
+    gap: 20px;
+}
+
+.imgangelica img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bruno {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0 auto;
+    background-color: #8c9c5d9c;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px #8c9c5d9c;
+}
+
+.imgbruno {
+    display: flex;
+    gap: 20px;
+}
+
+.imgbruno img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.carol {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0 auto;
+    background-color: #8c9c5d9c;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px #8c9c5d9c;
+}
+
+.imgcarol {
+    display: flex;
+    gap: 20px;
+}
+
+.imgcarol img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* fim depoimentos*/
+
+/* localização*/
+
+.localizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 260px auto 0;
+    color: #7d8c50;
+    background-color: #dccfafa5;
+    object-fit: contain;
+    width: 800px;
+    padding: 30px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.localizacao h2 {
+    margin-right: 30px;
+}
+
+.ploc {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    text-decoration: underline;
+    font-weight: 800;    
+}
+
+.locimg {
+    display: flex;
+    gap: 30px;
+}
+
+.locimg img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 25px #8c9c5d9c;
+}
+
+/* fim localização*/
+
+/*contato*/
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 300px;
+     color: #7d8c50;
+    background-color: #a5b5759c;
+}
+
+.instagram, .facebook, .whatsapp {
+    display: flex;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: larger;
+    padding: 10px;
+    font-weight: 500;
+}

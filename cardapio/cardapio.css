@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+html,
+body {
+    font-family: "Quicksand", sans-serif;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #f4e8ca;
+    animation: fadeIn 0.4s ease;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.header {
+    background-color: #dccfaf;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+#logo {
+    height: 100%;
+}
+
+.ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: #8c9c5d;
+    transition: 0.3s;
+    font-weight: 500;
+
+}
+
+a:hover {
+    font-size: 20px;
+}
+
+h2 {
+    display: inline-block;
+    background-color: #8c9c5d83;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+
+.cardapio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 200px;
+    color: #8c9c5d;
+    background-color: #dccfafa5;
+    border-radius: 20px;
+}
+
+.todocardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+    background-color: #dccfaf;
+    width: 900px;
+    border-radius: 20px;
+}
+
+.imgcafes,
+.imgbebidas,
+.imgcomidas,
+.imgdoces {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    transition: 0.3s;
+}
+
+.imgcafes img,
+.imgbebidas img,
+.imgcomidas img,
+.imgdoces img {
+    width: 250px;
+}
+
+.imgcafes:hover,
+.imgbebidas:hover,
+.imgcomidas:hover,
+.imgdoces:hover {
+
+    font-size: large;
+}
