@@ -350,3 +350,57 @@ a:hover {
     padding: 10px;
     font-weight: 500;
 }
+
+img { max-width: 100%; }
+
+@media (max-width: 768px) {
+    html { scroll-padding-top: 130px; }
+    body { padding-top: 130px; }
+
+    /* menu: quebra em linhas e logo vai pro começo */
+    .ul {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 16px;
+        padding: 10px 12px;
+    }
+    #logo { height: 45px; width: auto; order: -1; }
+    .ul a { font-size: 15px; padding: 6px 2px; display: inline-block; }
+    a:hover { font-size: inherit; } /* evita o "pulo" no toque */
+
+    /* bem-vindo */
+    .bem-vindo { margin-top: 40px; padding: 0 16px; text-align: center; }
+    #h1 { font-size: 1.6rem; }
+    #p1 { font-size: 1rem; }
+
+    /* história */
+    .historia { margin: 60px 16px 0; }
+    .orgimg { flex-direction: column; align-items: center; margin-right: 0; gap: 16px; }
+    #p2 { width: auto; margin-left: 0; }
+    .orgimg img { width: 100%; height: auto; }
+
+    /* galeria */
+    .galeria { margin-top: 60px; }
+    .botoes { width: 100%; max-width: 1000px; gap: 6px; padding: 0 8px; box-sizing: border-box; align-items: center; }
+    .galeria button { font-size: 28px; padding: 8px; }
+    .galeria button:hover { font-size: 28px; }
+    .imagens { flex: 1; min-width: 0; width: auto; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+    .imagens::-webkit-scrollbar { display: none; }
+    .imagens img { flex: 0 0 100%; width: 100%; height: 250px; scroll-snap-align: center; }
+
+    /* depoimentos */
+    .depoimentos { margin-top: 60px; }
+    .dividir { flex-direction: column; gap: 20px; padding: 0 16px; margin-top: 30px; }
+    .angelica, .bruno, .carol { width: 100%; max-width: 400px; box-sizing: border-box; }
+
+    /* localização */
+    .localizacao { width: auto; margin: 60px 16px 0; padding: 20px; box-sizing: border-box; border-radius: 30px; }
+    .localizacao h2 { margin-right: 0; }
+    .locimg { flex-direction: column; align-items: center; gap: 20px; }
+    .ploc { margin-top: 10px; }
+    .locimg img { width: 100%; max-width: 400px; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 30px; }
+
+    /* contato */
+    .contato { margin-top: 60px; padding-bottom: 20px; }
+}
