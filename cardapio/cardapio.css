@@ -120,3 +120,28 @@ h2 {
 
     font-size: large;
 }
+
+img { max-width: 100%; }
+
+@media (max-width: 768px) {
+    body { padding-top: 90px; }
+
+    .ul { height: auto; padding: 10px 16px; }
+    #logo { height: 50px; width: auto; }
+    a:hover { font-size: inherit; }
+
+    .cardapio { margin: 20px 16px 0; width: auto; padding: 16px; box-sizing: border-box; text-align: center; }
+
+    .todocardapio { width: calc(100% - 32px); margin: 30px auto; }
+
+    .imgcafes, .imgbebidas, .imgcomidas, .imgdoces {
+        padding: 0 16px;
+        gap: 12px;
+        box-sizing: border-box;
+    }
+    .imgcafes img, .imgbebidas img, .imgcomidas img, .imgdoces img {
+        width: 90px;
+        flex-shrink: 0;
+    }
+    .imgcafes ul, .imgbebidas ul, .imgcomidas ul, .imgdoces ul { padding-left: 18px; }
+}
